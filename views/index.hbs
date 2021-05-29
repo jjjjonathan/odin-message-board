@@ -1,7 +1,25 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<ul>
+<div class="ui one cards">
   {{#each messages}}
-    <li>{{this.text}}</li>
+    <div class="ui card">
+      <div class="content">
+        <div class="header">
+          {{this.user}}
+        </div>
+        <div class="text">
+          {{this.text}}
+        </div>
+        <div class="meta">
+          {{this.added}}
+        </div>
+      </div>
+    </div>
   {{/each}}
-</ul>
+</div>
+<div class="ui hidden divider"></div>
+<div class="center-container">
+<a href="/new" class="ui large basic black labeled icon button">
+  <i class="comment medical icon"></i>
+  Add new message
+</a>
+</div>

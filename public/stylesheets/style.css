@@ -1,8 +1,12 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #85ffbd;
+  background-image: linear-gradient(341deg, #85ffbd 0%, #fffb7d 100%);
 }
 
-a {
-  color: #00B7FF;
+.container {
+  margin-top: 50px;
+}
+
+.center-container {
+  text-align: center;
 }
